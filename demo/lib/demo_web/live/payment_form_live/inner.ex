@@ -8,6 +8,7 @@ defmodule DemoWeb.PaymentFormLive.Inner do
       <button id="payment-form-button" phx-click="payment-form-flash">
         Payment Form Flash
       </button>
+      <LiveToast.toast_group flash={@flash} toasts_sync={nil} connected={true} />
     </div>
     """
   end
