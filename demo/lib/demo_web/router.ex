@@ -18,6 +18,7 @@ defmodule DemoWeb.Router do
     live("/installation", HomeLive, :installation)
     live("/recipes", HomeLive, :recipes)
     live("/customization", HomeLive, :customization)
+    live("/payment-form", PaymentFormLive)
 
     get("/demo", PageController, :home)
   end
